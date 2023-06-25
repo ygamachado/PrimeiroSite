@@ -1,9 +1,9 @@
 ﻿using PrimeiroSite.Models;
 
-namespace PrimeiroSite.Repositorio
+namespace PrimeiroSite.Repositorio;
+
+public interface IContatoRepositorio
 {
-    public interface IContatoRepositorio
-    {
-        ContatoModel Adicionar(ContatoModel contato);
-    }
+    List<ContatoModel> BuscarTodos();
+    ContatoModel Adicionar(ContatoModel contato);
 }
